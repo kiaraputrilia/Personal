@@ -1,0 +1,1 @@
+function emailUpdates(bool){var token=$("#email-announce input[name='csrfmiddlewaretoken'").val();if(bool){bool="on"};$.post("/accounts/profile/",{form:"update_profile",setting_type:"email",csrfmiddlewaretoken:token,checkbox:bool},function(){$("#email-announce").slideUp();});}
