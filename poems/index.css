@@ -1,0 +1,36 @@
+.content_img{
+    position:relative;
+    width:200px;
+    height:200px;
+    border:0 solid #000;
+    float:left;
+    margin-right:10px;
+    margin-bottom:10px
+
+}
+.content_img div{
+    position:absolute;
+    bottom:0;
+    right:0;
+    background:#000;
+    color:#fff;
+    margin-bottom:5px;
+    font-family:sans-serif;
+    opacity:0;
+    visibility:hidden;
+    -webkit-transition:visibility 0s,opacity .5s linear;
+    transition:visibility 0s,opacity .5s linear
+
+}
+
+.content_img:hover{
+    cursor:pointer
+
+}
+
+.content_img:hover div{
+    width:150px;
+    padding:8px 15px;
+    visibility:visible;opacity:.7
+
+}
